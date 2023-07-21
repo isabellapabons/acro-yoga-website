@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+   }
+
+body {
+    background-color: white;
+}
+
+
+/* Free Shipping!*/ 
+
+.header-info {
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: 10.2px;
+    padding: 8px;
+}
+
+/*Hamburger Menu*/
+
+header {
+    background-color: white;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+/* Hamburger Menu: Shop, About, Ayurveda */
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Hamburger Menu: Logo */
+
+.logo {
+    font-size: 25px;
+}
+/*Hamburger Menu: Hamburger Design*/
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+/* Desktop approach and X effect of hamburger menu */
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px)rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
+/* Search Bar in Body*/
+
+.search-bar-header {
+    padding: 10px;
+    resize: none;
+}
+
+
+/*  Large Photos */
+.large-images-body {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+@media (min-width: 515px){
+    .large-images-body {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
+
+.woman-doing-headstand {
+    margin-top: 20px;
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 515px){
+    .woman-doing-headstand {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
+
+/* Product images */
+
+.products-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+.product-pictures-size {
+  height: 200px;
+  width: 200px;
+}
+
+.product-descriptions {
+    text-align: center;
+} 
+
+.product-costs {
+    display: block;
+}
+
+/* Our Picks For You */
+
+.store-recommendations {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+}
+/* Social Media username */
+
+.social-media-account {
+    background-color: black;
+    cursor: pointer;
+}
+
+.instagram-username {
+    color: white;
+    text-transform: lowercase;
+    margin: 20px;
+}
+
+/* Share Yours! #Acroyoga */
+
+.social-media-my-jackie {
+    color: white;
+    text-align: right;
+    font-size: 10px;
+    margin-top: -20px;
+   width: 100%;
+   object-fit: cover;
+}
+
+/* Social Media Grid */
+
+.social-media-grid {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    cursor: pointer;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 515px){
+    .social-media-grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 0.2px;
+    }
+}
+
+
+
+/* Shop Our Instagram */
+
+.shop-instagram {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    max-width: 450rem;
+    padding: 12px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* Footer */
+
+.footer-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   align-items: center;
+    background-color: black;
+    cursor: pointer;
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer-icons-size {
+    height: 50px;
+    width: 50px;
+}
+
+.footer-icons-text {
+    color: white;
+    text-align: center;
+    font-size: 8px;
+    text-transform: uppercase;
+}
+
+
+
+
